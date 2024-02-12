@@ -8,7 +8,7 @@ if (isset($_GET["l"])) {
 
     $results = mysqli_query($conn, "SELECT * FROM links WHERE id = '$id';");
 
-    echo("test");
+    //echo("test");
 
     if (mysqli_num_rows($results) > 0) {
 
