@@ -1,0 +1,63 @@
+p {
+    color:yellow;
+    font-family: Ariel, Helvetica, sans-serif;
+    background-color:blue;
+}
+
+a{
+    color:green;
+}
+
+body {
+    background: linear-gradient(blue, red, orange);
+}
+
+img {
+    height:300px;
+    width:450px;
+}   
+#paragraaf1
+{
+    color: black;
+    background-color:white;
+    border: solid 2px goldenrod;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+}
+#paragraaf2
+{
+    color: rgb(175, 175, 41);
+    background-color: rgb(0, 255, 225);
+    border: solid 2px rgb(18, 143, 97);
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+}
+#paragraaf3
+{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 0, 0, 0.04);
+    border: solid 2px rgb(32, 48, 218);
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+}
+#paragraaf4
+{
+    color: rgb(218, 34, 160);
+    background-color: rgb(195, 132, 25);
+    border: solid 2px rgba(32, 218, 168, 0.621);
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+}
+#paragraaf5
+{
+    color: rgb(50, 87, 15);
+    background-color: rgb(224, 36, 224);
+    border: solid 2px rgba(64, 91, 84, 0.621);
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+}

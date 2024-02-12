@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="moveDiv"></div>
+
+    <div id="moveDiv" onmouseover="move()"></div>
+    </div>
+    <script>
+        function move() {
+            console.log("op move geklikt");
+            let mvDiv = document.getElementById("moveDiv");
+            mvDiv.style.top = "200px";
+        }
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body
+{
+    background: linear-gradient(90deg, rgba(11,200,204,1) 0%, rgba(189,8,8,1) 82%);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#header
+{
+    padding-top: 200px;
+    padding-bottom: 20px;
+    justify-content: center;
+    font-size: 50px;
+    display: flex;
+    color: white;
+    border-bottom: black;
+}
+
+.container
+{
+    align-items: center;
+    justify-content: center;
+}
+
+#username
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    opacity: 70%;
+}
+
+#username input {
+    width: 300px;
+    height: 40px;
+    font-size: 25px;
+    border: transparent;
+    opacity:70%;
+}
+
+#password
+{
+    justify-content: center;
+    display: flex;
+    opacity: 70%;
+    padding: 10px;
+}
+
+#password input {
+    width: 300px;
+    height: 40px;
+    font-size: 25px;
+    border: transparent;
+    opacity: 70%;
+}
+
+#sub {
+    padding: 20px;
+    padding: 15px 32px;
+    border: none;
+    text-decoration: none;
+    justify-content: center;
+    height: 40px;
+    display: flex;
+    
+}
+#sub input {
+    background-color: white;
+    height: 25px;
+    width: 50px;
+}
+#sub input:hover {
+    background-color: rgb(223, 223, 223);
+
+}
+#sub input:active {
+    background-color:yellow;
+}
+
+#mini {
+    color:green;
+    display: flex;
+    font-size: 20px;
+    justify-content: end;
+    margin:6px;
+    position:absolute;
+    bottom:0;
+    right:0;
+}

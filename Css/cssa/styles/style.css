@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(90deg, rgba(11,200,204,1) 0%, rgba(189,8,8,1) 82%);
+    margin:0;
+}
+#containter {
+    background-color: red;
+    width:100%;
+    height: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+}
+#header {
+    background-color: green;
+    width: 100%;
+}
+#content {
+    background-color: aqua;
+    width: 100%;
+}
+
+#footer {
+    background-color: blue;
+    width: 100%;
+}

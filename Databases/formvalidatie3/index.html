@@ -1,0 +1,116 @@
+<php
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulieren</title>
+
+<body>
+    <style>
+    </style>
+        <script>
+
+        function checkInput(id) {
+            let bVerstuur = false;
+
+            let inp = document.getElementById(id);
+            console.log("id = " + id);
+            console.log("value = " + inp.value);
+        
+                if (id == "voornaam") {
+                    if (inp.value.length >= 2) {
+                        inp.style.backgroundColor = "lightgreen";
+                        document.getElementById("verstuur").disabled = "";
+                        bVerstuur = false;
+                    } else {
+                        inp.style.backgroundColor = "red";
+                        document.getElementById("verstuur").disabled = "disabled";
+                        bVerstuur = false;
+                    }
+                }
+
+                if (id == "achternaam") {
+                    if (inp.value.length >= 2) {
+                        inp.style.backgroundColor = "lightgreen";
+                        document.getElementById("verstuur").disabled = "";
+                        bVerstuur = false;
+                    } else {
+                        inp.style.backgroundColor = "red";
+                        document.getElementById("verstuur").disabled = "disabled";
+                        bVerstuur = false;
+                    }
+                }
+            }
+        if (bVerstuur) {
+        document.getElementById("verstuur").disable = "";
+        } else {
+        document.getElementById("verstuur").disable = "disabled"; 
+        }
+    
+    </script>
+</head>
+
+
+        <td>email</td>
+<td><button name="email" name="email" id="email"></td>
+
+<disabled = "disabled"
+type="submit"
+id="naam" 
+
+</body>
+</html>
+
+
+
+<script>
+    // functie die per input met een bepaald id checkt of de value goed is
+    function checkInput(id) {
+        let bVerstuur = false;
+
+        let inp = document.getElementById(id);
+        console.log("id = " + id);
+        console.log("value = " + inp.value);
+        // test hier als het meegestuurde id bijvoorbeeld gelijk is aan voornaam,
+        // of de value daarvan, minimaal een bepaalde lengte heeft
+        // Als dat zo is, maak dan de achtergrondkleur groen en bVerstuur=true, anders...
+
+        return bVerstuur; 
+    }
+
+    function checkAll() {
+        let bVerstuurAll = true;
+
+        if (checkInput('name') == false) {
+            if (inp.value.length >= 2) {
+                inp.style.backgroundColor = "lightgreen";
+                document.getElementById("verstuur").disabled = "";
+                bVerstuurAll = false;
+            } else {
+                inp.style.backgroundColor = "red";
+                document.getElementById("verstuur").disabled = "disabled";
+                bVerstuur = false;
+        }
+    }   if (checkInput('country') == false) {
+            if (inp.value.length >= 2) {
+                    inp.style.backgroundColor = "lightgreen";
+                    document.getElementById("verstuur").disabled = "";
+                    bVerstuurAll = false;
+                } else {
+                inp.style.backgroundColor = "red";
+                document.getElementById("verstuur").disabled = "disabled";
+                bVerstuur = false;
+        }
+
+        if (bVerstuurAll == true) {
+            document.getElementById("verstuur").disable = "";
+        } else {
+            document.getElementById("verstuur").disable = "disabled";
+        }
+    }
+}
+</script>   

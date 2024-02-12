@@ -1,0 +1,43 @@
+body {
+    background-color: blue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 70px;
+}
+
+.paragraaf1 {
+    text-align: left;
+    background-color: yellow;
+    color: white;
+}
+
+.paragraaf2 {
+    background-color: green;
+    text-align: left;
+    color: white;
+}
+
+.paragraaf3 {
+    background-color: black;
+    text-align: left;
+    color: White;
+}
+
+.paragraaf4 {
+    background-color: orange;
+    text-align: left;
+    color: white;
+}
+
+.paragraaf5 {
+    background-color: brown;
+    text-align: left;
+    color: white;
+}

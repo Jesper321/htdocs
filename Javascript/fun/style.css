@@ -1,0 +1,16 @@
+.container {
+    width: 800px;
+    height: 600px;
+    background-color: darkblue;
+    margin: auto;
+    position: relative;
+}
+
+.moveDiv {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Tijd</th>
+        <th>Maandag</th>
+        <th>Dinsdag</th>
+        <th>Woensdag</th>
+        <th>Donderdag</th>
+        <th>Vrijdag</th>
+    </tr>
+    <?php
+    $times = ["08:00 - 09:00", "09:15 - 10:15", "10:30 - 11:30", "11:45 - 12:45"];
+    $classes = [
+        ["Wiskunde", "Geschiedenis", "Engels", "Biologie", "Pauze"],
+        ["Natuurkunde", "Lichamelijke Opvoeding", "Frans", "Scheikunde", "Pauze"],
+        ["Informatica", "Muziek", "Nederlands", "Aardrijkskunde", "Pauze"],
+    ];
+
+    for ($i = 0; $i < count($times); $i++) {
+        echo "<tr>";
+        echo "<td>{$times[$i]}</td>";
+        for ($j = 0; $j < count($classes); $j++) {
+            echo "<td>{$classes[$j][$i]}</td>";
+        }
+        echo "</tr>";
+    }
+    ?>
+</table>
+</body>
+</html>

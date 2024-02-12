@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(94, 94, 94);
+    color: white;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+.formbox {
+    margin-left: 650px;
+    margin-top: 40px;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+#submit {
+    margin-top: 20px;
+    margin-left: 650px;
+}
+
+input:hover {
+    background-color: rgb(227, 227, 227);
+}

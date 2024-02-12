@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS basis</title>
+    <script>
+        //console.log("hallo daar")
+        function showDialog(tekst) {
+            document.getElementById("dialogBox").style = "top: 20px"
+            document.getElementById("dialogHeader").innerHTML = tekst
+        }
+
+        function hideDialog() {
+            document.getElementById("dialogBox").style = "top: -100px"
+        }
+    </script>
+</head>
+
+<body>
+    <!-- start ---------------------- dialog box -->
+    <div id="dialogBox">
+        <div id="dialogHeader">
+            dialog titel
+            <div id="close" img src="img/close.png"></div>
+        </div>
+        <div id="dialogContent">
+            content content content content content content contentcontent content content
+        </div>
+    </div>
+    <!-- stop ---------------------- dialog box -->
+    
+    <h1>Dialog box</h1>
+
+    <button onclick="showDialog('inloggen')">inloggen</button>
+    <button onclick="showDialog('anders')">show dialog anders</button>
+    <button onclick="hideDialog()">hide dialog</button>
+    
+
+    
+</body>

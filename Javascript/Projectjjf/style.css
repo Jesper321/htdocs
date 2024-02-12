@@ -1,0 +1,29 @@
+#header {
+    text-align: center;
+    background-color: rgb(255, 113, 113);
+    margin: auto;
+}
+#nav {
+    justify-content: center;
+    background-color: rgb(255, 113, 113);
+    display:flex;
+    padding: 6px;
+
+}
+#nav div {
+    width: 100px;
+    color:white;
+    text-align:center;
+    margin:2px 0px 2px 2px; 
+    border-right: 2px solid white;  
+}
+#nav.rounded div {
+    width: 100px;
+    text-align: center;
+    margin: 6px 0 6px 6px;
+    padding: 1px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 6px;
+}

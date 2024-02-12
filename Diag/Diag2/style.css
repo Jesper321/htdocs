@@ -1,0 +1,110 @@
+.header {
+    float:center;
+    font-size: 60px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+img {
+    height:100px;
+    width:100px;
+}
+#nav {
+    justify-content: center;
+    display:flex;
+    padding: 6px;
+}
+#nav div {
+    width: 75px;
+    font-size: 25px;
+    color:Blue;
+    text-align:center;
+    border-right: 2px solid black;  
+}
+#nav.rounded div {
+    width: 100px;
+    text-align: center;
+}
+
+.text {
+    border: solid 4px rgb(193, 189, 189);
+    border-radius: 10px;
+    width: 700px;
+    height: 400px;
+    background-color: rgb(218, 217, 217);
+    position:relative; 
+    top:50px; 
+    left:50px; 
+    overflow-x;
+}
+
+.text2 {
+    position:absolute;
+    bottom:125px;
+    left:275px;
+}
+
+p {
+    margin:5px;
+    position:relative;
+    left:50px;
+}
+
+.tittle {
+    font-size: 25px;
+    font-weight: bold;
+    margin:10px;
+}
+
+.boldtxt {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+.headercontainer {
+    display:absolute;
+    padding-left: 1040px;
+    justify-content: space-around;
+    float:center;
+    padding-bottom: 600px;
+}
+
+#headernews {
+    font-size: 25px;
+}
+
+
+#firstname
+{
+    font-size: 10px;
+}
+
+#name
+{
+    padding-bottom: 20px;
+}
+
+#name input
+{
+    width: 320px;
+}
+
+#email input
+{
+    width: 320px;
+}
+
+#help input
+{
+    width: 320px;
+    height: 50px;
+}
+
+input
+{
+    width: 90px;
+    border: solid black;
+    background-color: white;
+}

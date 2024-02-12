@@ -1,0 +1,22 @@
+body
+{
+    background: linear-gradient(90deg, rgba(11,200,204,1) 0%, rgba(189,8,8,1) 82%);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.foto {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+
+.text {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}

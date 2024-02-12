@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //alert("hallo daar")
+
+        function doeIets() {
+            document.getElementById('dediv').innerHTML='Hoi';
+
+            document.getElementById('dediv').style.backgroundColor = "red";
+            document.getElementById('dediv').style.color = "red";
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Basis Javascript</h1>
+    <button oneclick="console.log('Hoi ik ben jesper')">groet</button>
+    <button oneclick="doeIets'>groet</button>
+    <div id="dediv">hier staat niks</div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beginnen met Javascript</title>
+  </head>
+    <body>
+    <h1>Een pagina met een inline Javascript!</h1>
+
+    <!-- <script src="mijnscript.js"></script> 
+    <div id="mijndiv">
+        Dit is een div
+    </div>
+    <script>
+        document.getElementById("mijndiv").innerText = "dit heb ik net veranderd"
+        console.log(document.getElementById("mijndiv").innerText)
+    </script>
+    </body>
+</html> -->
+<button onclick='veranderkleur()'>
+    Verander de tekst van kleur</button>
+<script>
+    function veranderkleur() {
+        if(document.getElementById("output").style.color = "#ffaacc") {
+            document.getElementById("output").style.color = "red"; 
+        } else if (document.getElementById("output").style.color = "red") {
+            document.getElementById("output").style.color = "black"
+        }
+    }
+</script>
+
+  </button>

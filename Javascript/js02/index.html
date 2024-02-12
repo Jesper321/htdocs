@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Document</title>
+<script>
+
+//console.log("hallo daar")
+
+    function doeIets (naam) {
+        document.getElementById('dediv').innerHTML = 'Hoi ' + naam;
+
+        document.getElementById('dediv').style.backgroundColor="red";
+        document.getElementById('dediv').style.color = "white";
+}
+</script>
+</head>
+<body>
+    <h1>Basis Javascript</h1>
+    <button onclick="console.log('Hoi ik ben Chris ')">groet</button> 
+    <button onclick="doeIets ('Marloes')">groet Marloes</button> 
+    <button onclick="doeIets ('Chris')">groet Chris</button> 
+    <button onclick="doeIets ('Iemand')">groet Iemand</button>
+
+    <div id="dediv">hier staat niets</div>
+</body>
+
+</html>
