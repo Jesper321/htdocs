@@ -39,7 +39,7 @@
             // html += "naam van eerste biertje: " + beers[1].naam + " " + beers[0].brouwer
             beers.forEach(function (beer, index) {
                 // html += index + ") " + beer.naam + ", " + beer.brouwer + "<br>";
-                html += index + beers[index].naam + "<br>";
+                html += (index+1) + ") "+ beers.naam + "perc: "+ (100*beer.perc)+"<br>";
             });
             document.getElementById("output").innerHTML += html;
         }
