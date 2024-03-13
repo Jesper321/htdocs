@@ -1,0 +1,25 @@
+{
+    "movies": [
+        {
+            "title": "Movie title 1",
+            "id": "movie-title-1",
+            "episodes": [
+                {
+                    "title": "Episode 1: The curses",
+                    "id": "movie-title-1-episode-1"
+                }
+            ]
+        }
+    ]
+}
+
+
+[
+    {
+        "title": "Movie title 1",
+        "id": "movie-title-1",
+        "seasons": [
+            "movie-title-1-episode-1"
+        ]
+    }
+]
