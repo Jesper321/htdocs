@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js" 
-        integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer">
-    </script>
+    <!-- <script src="request.js"></script> -->
 </head>
 
     <script>
-        lat=52.5174311;
-        lon=6.088564;
-        api="7bb94cd900bc0bcf893cb52603ca2aa0";
-        let url = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + api;
-        axios.get(url)
-                .then(function (response) {
-                    let weather = response.data;
-                    console.log("weather: ", weather);
-                    let html = "weather:<br>";
-                    // for(i=0; i-273; i++) {
-                    //     html += " + weather.any + ", " + weather.any +"<br>";
-                    // }
+        getText("https://api.openweathermap.org/data/2.5/forecast?q=Zwolle,nl&appid=7bb94cd900bc0bcf893cb52603ca2aa0")
+        .then(response => {
+            console.log(response.cod);
+            console.log(response.cnt);
 
-                    
-                    document.getElementById("outputDiv").innerHTML = html;
-                })
+            fshow(response);
+        });
+
+        async function getText(url) {
+            let x = await fetch(url);
+            let y = await x.json();
+            return y;
+        }
     </script>
 <body>
     <h1>Weather</h1>
-    <div id="outputDiv"> hier komt wat in te staan</div>    
+
+    <div id="outputDiv"></div>    
+    <script>
+    function fshow(weather) {
+        let table = "<h1>Het weer voor " + weather.city.name + "</h1>";
+        table = "<table>";
+        table += "<tr>";
+        table += "<th>Datum</th>";
+        table += "</tr>";
+        table += "<tr><td>";
+        table += "</table>";
+        document.getElementById("outputDiv").innerHTML = table;
+    }
+    </script>
 </body>
 </html>
